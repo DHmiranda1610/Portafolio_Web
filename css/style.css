@@ -512,6 +512,121 @@ h3.my-profession {
     text-align: justify;
     color: var(--text-black-700);
 }
+.about .about-content .education-centers-list {
+    list-style: none;
+}
+.about .about-content .education-centers-list li {
+    border-top: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    font-size: 15px;
+    line-height: 21px;
+    padding: 9px 0;
+}
+.about .about-content .education-centers-list li:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+.about .about-content .education-centers-list li span {
+    color: var(--text-black-700);
+    display: block;
+    font-size: 14px;
+    margin-top: 2px;
+}
+/* Certifications */
+.certifications .container {
+    padding-bottom: 40px;
+}
+.certifications .certifications-content,
+.certifications .timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.certifications .certifications-intro {
+    color: var(--text-black-700);
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.certifications .timeline {
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.certifications .timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 45px;
+}
+.certifications .timeline-item:last-child {
+    padding-bottom: 0;
+}
+.certifications .timeline-item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background: var(--skin-color);
+}
+.certifications .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--skin-color);
+}
+.certifications .timeline-date {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.certifications .timeline-date .fa {
+    margin-right: 5px;
+}
+.certifications .timeline-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: var(--text-black-900);
+}
+.certifications .certification-featured {
+    color: var(--text-black-700);
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+.certifications .certification-list {
+    list-style: none;
+}
+.certifications .certification-list li {
+    border-top: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 11px 0;
+    color: var(--text-black-900);
+    font-size: 15px;
+    line-height: 22px;
+}
+.certifications .certification-list li span {
+    color: var(--text-black-700);
+    flex: 0 0 42%;
+    text-align: right;
+}
+.certifications .certifications-action {
+    margin-top: 30px;
+    text-align: center;
+}
+.certifications .certifications-action .fa {
+    margin-right: 8px;
+}
 /* Service */
 .service .container{
     padding-bottom: 40px;
@@ -787,6 +902,14 @@ h3.my-profession {
     }
     .tech-item {
         flex: 0 1 calc(50% - 20px); /* 2 por fila */
+    }
+    .certifications .certification-list li {
+        display: block;
+    }
+    .certifications .certification-list li span {
+        display: block;
+        margin-top: 4px;
+        text-align: left;
     }
 }
 /*Social icons*/

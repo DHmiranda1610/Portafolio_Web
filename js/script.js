@@ -1,6 +1,13 @@
 /* ======= Typing Animation ======= */
 var typed = new Typed(".typing",{
-    strings: [ "Web Developer", "Full Stack Developer", "Data Scientist", "Data Analyst", "Data Engineer", "Machine Learning Engineer", "AI Engineer", "System Architect", "System Engineer"],
+    strings: ["Analista de Datos Junior", "Profesional de Ciberseguridad en formación", "Asistente de Sistemas", "Desarrollador Web Junior"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+var typedAbout = new Typed(".typing-about", {
+    strings: ["Analista de Datos Junior", "Profesional de Ciberseguridad en formación", "Asistente de Sistemas", "Desarrollador Web Junior"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
